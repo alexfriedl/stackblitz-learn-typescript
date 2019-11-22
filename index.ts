@@ -3,8 +3,8 @@ import "./style.css";
 
 // Write TypeScript code!
 class Addition {
-  public summand1: number = 5;
-  public summand2: number = 19;
+  private summand1: number = 5;
+  private summand2: number = 19;
 
   constructor(summand3?: number) {
     this.initialSum(summand3);
