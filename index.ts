@@ -22,3 +22,21 @@ class Addition {
 let foo = new Addition(34);
 //foo.sum(5, 3);
 foo.initialSum(1);
+
+// Enums
+// https://www.tutorialsteacher.com/typescript/typescript-enum
+enum PrintMedia {
+  Newspaper = 1,
+  Newsletter,
+  Magazine,
+  Book
+}
+
+function getMedia(mediaName: string): PrintMedia {
+  if (mediaName === "Forbes" || mediaName === "Outlook") {
+    return PrintMedia.Magazine;
+  }
+}
+
+let mediaType: PrintMedia = getMedia("Forbes"); // returns Magazine
+console.log("Enum", mediaType);
