@@ -23,7 +23,7 @@ let foo = new Addition(34);
 //foo.sum(5, 3);
 foo.initialSum(1);
 
-// Enums
+// Enums (numbers)
 // https://www.tutorialsteacher.com/typescript/typescript-enum
 enum PrintMedia {
   Newspaper = 1,
@@ -40,3 +40,11 @@ function getMedia(mediaName: string): PrintMedia {
 
 let mediaType: PrintMedia = getMedia("Forbes"); // returns Magazine
 console.log("Enum", mediaType);
+
+// Enums (strings)
+enum CustomMapping {
+  active = "ACTIVE",
+  inactive = "INACTIVE"
+}
+
+console.log(CustomMapping.active);
